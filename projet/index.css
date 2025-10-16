@@ -1,0 +1,72 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+header,
+main,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(87, 180, 56, 0.2);
+}
+
+header,
+footer {
+  background-color: gainsboro;
+}
+footer {
+  padding: 15px 0;
+  height: auto;
+}
+footer nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+h1,
+p {
+  text-align: center;
+}
+
+main {
+  font-size: xx-large;
+  background-color: rgba(87, 180, 56, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(220, 220, 220, 0.5);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+main:hover {
+  transform: translateY(-2px) translateX(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+nav {
+  display: flex;
+  gap: 15px;
+}
+a {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: rgba(87, 180, 56, 0.2);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  padding: 10px 20px;
+  color: black;
+}
+a:hover {
+  background-color: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
